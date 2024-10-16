@@ -2,7 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.font{
+  font-family: "Saira Semi Condensed", sans-serif;
+  font-weight: 300,400,500,600,700;
+}
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -24,4 +31,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
