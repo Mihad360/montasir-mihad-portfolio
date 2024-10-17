@@ -4,6 +4,10 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { CustomEase } from "gsap/dist/CustomEase";
+import { FaGithubSquare } from "react-icons/fa";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import Link from "next/link";
 
 gsap.registerPlugin(CustomEase);
 CustomEase.create("cubic-text", "0.25,1,0.5,1");
@@ -63,28 +67,28 @@ const Banner = () => {
         <div className="text-white">
           <h1 className="h_title relative">
             <span className="overflow-hidden inline-block">
-              <span className="text-2xl tracking-widest translate-y-full inline-block">
+              <span className="text-2xl tracking-widest -translate-y-full inline-block">
                 Hi, I am&nbsp;
               </span>
             </span>
           </h1>
           <h1 className="h_title text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
-              <span className="pt-5 tracking-widest translate-y-full inline-block">
+              <span className="pt-5 tracking-widest -translate-y-full inline-block">
                 Montasir&nbsp;
               </span>
             </span>
           </h1>
           <h1 className="h_title text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
-              <span className="pt-3 tracking-widest translate-y-full inline-block">
+              <span className="pt-3 tracking-widest -translate-y-full inline-block">
                 Ahmed&nbsp;
               </span>
             </span>
           </h1>
           <h1 className="h_title text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
-              <span className="pt-3 tracking-widest translate-y-full inline-block">
+              <span className="pt-3 tracking-widest -translate-y-full inline-block">
                 Mihad&nbsp;
               </span>
             </span>
@@ -101,6 +105,29 @@ const Banner = () => {
               repeat={Infinity}
             />
           </p>
+          <div className="flex justify-center md:justify-start items-center gap-4 pt-5 text-white pb-10 md:pb-0">
+          <Link
+            className="text-4xl hover:scale-125 duration-300 ease-in-out transition-all"
+            target="_blank"
+            href="mailto:ahmedmihad962@gmail.com"
+            rel="noopener noreferrer">
+            <MdEmail />
+          </Link>
+          <Link
+            className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
+            target="_blank"
+            href="https://www.facebook.com/MontasirMihad360"
+            rel="noopener noreferrer">
+            <FaSquareFacebook />
+          </Link>
+          <Link
+            className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
+            target="_blank"
+            href="https://github.com/Mihad360"
+            rel="noopener noreferrer">
+            <FaGithubSquare />
+          </Link>
+        </div>
         </div>
         <div
           className="pointer-event-auto cursor-pointer leading-none transition-height [&>p]:w-[500px] [&>p]:duration-500 [&>p]:ease-out"

@@ -41,7 +41,7 @@ const Navbar = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="flex items-center justify-between py-3 border-b-gray-500 border-b">
+      <div className="header flex items-center justify-between py-3 border-b-gray-500 border-b fixed w-[1280px]">
         <div className="text-white text-5xl">
           <RxModulzLogo />
         </div>

@@ -1,4 +1,5 @@
 import Navbar from "./components/homepages/Navbar";
+import { PageProvider } from "./components/pageContext";
 import "./globals.css";
 
 export const metadata = {
@@ -13,10 +14,12 @@ export default function RootLayout({ children }) {
         className={`font antialiased`}
       >
         <div className="bg-gradient-to-r from-indigo-950 via-slate-800 to-indigo-950 min-h-screen">
+        <PageProvider>
           <div>
             <Navbar></Navbar>
           </div>
         {children}
+        </PageProvider>
         </div>
       </body>
     </html>

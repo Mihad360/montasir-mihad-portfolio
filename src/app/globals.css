@@ -9,6 +9,18 @@
   font-weight: 300,400,500,600,700;
 }
 
+html{
+  scroll-behavior: initial;
+}
+
+body.hide_header .header{
+  transform: translateY(-100%);
+}
+
+/* body.scrolled .header{
+ background: ; 
+} */
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
