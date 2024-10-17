@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       <body
         className={`font antialiased`}
       >
-        <div className="bg-gradient-to-r from-indigo-950 via-slate-800 to-indigo-950 h-screen">
+        <div className="bg-gradient-to-r from-indigo-950 via-slate-800 to-indigo-950 min-h-screen">
           <div>
             <Navbar></Navbar>
           </div>
