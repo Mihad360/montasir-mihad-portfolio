@@ -63,7 +63,7 @@ const Banner = () => {
 
   return (
     <div className="max-w-7xl mx-auto">
-      <div className="flex items-center justify-between pt-12 px-5">
+      <div className="flex items-center justify-between pt-32 px-5">
         <div className="text-white">
           <h1 className="h_title relative">
             <span className="overflow-hidden inline-block">

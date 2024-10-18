@@ -17,6 +17,16 @@ body.hide_header .header{
   transform: translateY(-100%);
 }
 
+@media (min-width: 1024px) {
+  body.scrolled .header_container{
+    padding: 10px 5px;
+  }
+  body.scrolled .header_logo p {
+    height: 40px;
+    padding: 0 10px;
+}
+}
+
 /* body.scrolled .header{
  background: ; 
 } */
