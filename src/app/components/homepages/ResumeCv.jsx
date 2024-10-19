@@ -9,7 +9,7 @@ const ResumeCv = () => {
       <h1 className="uppercase text-3xl text-center text-white pt-12 font-semibold">
         Resume - CV
       </h1>
-      <div className="flex justify-between gap-20 text-gray-100 pt-10 pb-12">
+      <div className="flex justify-center gap-20 text-gray-100 pt-10 pb-12">
         <div className="text-center p-10 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/50 hover:bg-gradient-to-tl hover:from-gray-900 hover:via-black hover:to-indigo-950 duration-300">
           <h1 className="text-2xl font-medium uppercase pb-3 text-blue-600">
             Resume
@@ -68,8 +68,7 @@ const ResumeCv = () => {
             CV
           </h1>
           <h1 className="text-xl ">
-            A more detailed document that outlines your entire career history,
-            often used in academic or research fields.
+            A more detailed document that outlines your entire career history, often used in academic or research fields.
           </h1>
           <ul className="px-16 pt-3 text-gray-400">
             <li className="list-disc">
