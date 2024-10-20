@@ -33,30 +33,168 @@ body.hide_header .header{
 }
 }
 
-/* body.scrolled .header{
- background: ; 
-} */
-
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+.skill{
+  width: 160px;
+  height: 160px;
+  /* background: cornflowerblue; */
+  position: relative;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.outer{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+  -6px -6px 10px -1px rgba(5, 5, 5, 0.7)
+}
+
+.inner{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+  inset -4px -4px 6px -1px rgba(5, 5, 5, 0.7),
+  -0.5px -0.5px 0px rgba(2, 2, 2, 0.7),
+  0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+  0px 12px 10px -10px rgba(0, 0, 0, 0.015)
+}
+
+#number1{
+  font-size: 25px;
+  font-weight: 600;
+  color: darkseagreen;
+}
+#number{
+  font-size: 25px;
+  font-weight: 600px;
+  color: darkseagreen;
+}
+
+#circle{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim 2s linear forwards;
+}
+#circle2{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim2 2s linear forwards;
+}
+#circle3{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim3 2s linear forwards;
+}
+#circle4{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim4 2s linear forwards;
+}
+#circle5{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim5 2s linear forwards;
+}
+#circle6{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim6 2s linear forwards;
+}
+#circle7{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim7 2s linear forwards;
+}
+#circle8{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim8 2s linear forwards;
+}
+#circle9{
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: anim9 2s linear forwards;
+}
+
+#svg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes anim{
+  100%{
+    stroke-dashoffset: 110;
   }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes anim2{
+  100%{
+    stroke-dashoffset: 124;
   }
-} */
+}
+@keyframes anim3{
+  100%{
+    stroke-dashoffset: 132;
+  }
+}
+@keyframes anim4{
+  100%{
+    stroke-dashoffset: 132;
+  }
+}
+@keyframes anim5{
+  100%{
+    stroke-dashoffset: 154;
+  }
+}
+@keyframes anim6{
+  100%{
+    stroke-dashoffset: 110;
+  }
+}
+@keyframes anim7{
+  100%{
+    stroke-dashoffset: 176;
+  }
+}
+@keyframes anim8{
+  100%{
+    stroke-dashoffset: 88;
+  }
+}
+@keyframes anim9{
+  100%{
+    stroke-dashoffset: 176;
+  }
+}
