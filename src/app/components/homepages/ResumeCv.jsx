@@ -10,7 +10,7 @@ const ResumeCv = () => {
         Resume - CV
       </h1>
       <div className="flex justify-center gap-20 text-gray-100 pt-10 pb-12">
-        <div className="text-center p-10 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/50 hover:bg-gradient-to-tl hover:from-gray-900 hover:via-black hover:to-indigo-950 duration-300">
+        <div className="text-center p-10 ">
           <h1 className="text-2xl font-medium uppercase pb-3 text-blue-600">
             Resume
           </h1>
@@ -63,7 +63,7 @@ const ResumeCv = () => {
           </div>
         </div>
 
-        <div className="text-center p-10 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg transition-transform transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/50 hover:bg-gradient-to-tl hover:from-gray-900 hover:via-black hover:to-indigo-950 duration-300">
+        <div className="text-center p-10 ">
           <h1 className="text-2xl font-medium uppercase pb-3 text-blue-600">
             CV
           </h1>

@@ -1,3 +1,5 @@
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+
+      animation: {
+        loopL: "loopTextLeft 4s linear infinite",
+      },
+
+      keyframes: {
+        loopTextLeft: {
+          '0%' : {transfrom: "translateX(0)"},
+          "100%" : {transform: "translateX(-100%)"}
+        }
+      },
       transitionProperty: {
         height: 'height',
       },

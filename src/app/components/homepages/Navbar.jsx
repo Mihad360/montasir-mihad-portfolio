@@ -6,11 +6,10 @@ import { RxModulzLogo } from "react-icons/rx";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
-  const linkRefs = useRef([]); // To reference all the links for animation
+  const linkRefs = useRef([]);
   const pathname = usePathname();
   console.log(pathname);
 
-  // Function to wrap each letter in a span
   const wrapLetters = (text) => {
     return text.split("").map((letter, index) => (
       <span

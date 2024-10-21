@@ -9,10 +9,23 @@
   font-weight: 300,400,500,600,700;
 }
 
-*{
+/* globals.css */
+.darker-gradient-bg {
+  background: linear-gradient(135deg, #1a0b34, #2a0037, #35005b);
+  min-height: 100vh;
+}
+
+
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+} */
+
+@layer utilities{
+  .pause{
+    animation-play-state: paused;
+  }
 }
 
 html{
@@ -36,7 +49,6 @@ body.hide_header .header{
 .skill{
   width: 160px;
   height: 160px;
-  /* background: cornflowerblue; */
   position: relative;
 }
 
@@ -63,14 +75,9 @@ body.hide_header .header{
   0px 12px 10px -10px rgba(0, 0, 0, 0.015)
 }
 
-#number1{
-  font-size: 25px;
-  font-weight: 600;
-  color: darkseagreen;
-}
 #number{
   font-size: 25px;
-  font-weight: 600px;
+  font-weight: 600;
   color: darkseagreen;
 }
 

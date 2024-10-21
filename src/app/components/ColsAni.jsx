@@ -5,28 +5,10 @@ import React, { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
-import { skillsData } from "../lib/skills";
-import { CircularProgressbar } from "react-circular-progressbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const ColsAni = () => {
-  useEffect(() => {
-    let number1 = document.getElementById("number1");
-    console.log(number1);
-    let counter = 0;
-
-    const intervalId = setInterval(() => {
-      if (counter >= 75) {
-        clearInterval(intervalId);
-      } else {
-        counter += 1;
-        number1.innerHTML = counter + "%";
-      }
-    }, 10); 
-
-    return () => clearInterval(intervalId); 
-  }, []);
 
   useEffect(() => {
     let lenis;
@@ -67,7 +49,7 @@ const ColsAni = () => {
         switch (item.column) {
           case 0:
             // Adjust the movement for the left column
-            xPercentValue = -50; // Less extreme
+            xPercentValue = -60; // Less extreme
             transformOrigin = "0% 50%";
             scaleXvalue = 1; // Less intense
             scaleYvalue = 1; // Less compressed vertically
@@ -83,7 +65,7 @@ const ColsAni = () => {
             break;
           case 2:
             // Adjust the movement for the right column
-            xPercentValue = 50; // Less extreme
+            xPercentValue = 60; // Less extreme
             transformOrigin = "100% 50%";
             scaleXvalue = 1; // Less intense
             scaleYvalue = 1; // Less compressed vertically
@@ -149,7 +131,7 @@ const ColsAni = () => {
                           <div className="skill">
                             <div className="outer">
                               <div className="inner">
-                                <div id="number1"></div>
+                                <div id="number">75%</div>
                               </div>
                             </div>
                             <svg
