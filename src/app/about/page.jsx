@@ -1,5 +1,5 @@
 import React from 'react';
-import Contactme from '../components/aboutpages/Contactme';
+import Contactme from '../components/contactmepages/Contactme';
 import AboutBanner from '../components/aboutpages/AboutBanner';
 import AboutBannertwo from '../components/aboutpages/AboutBannertwo';
 import Exp_skill from '../components/aboutpages/Exp_skill';
@@ -13,9 +13,6 @@ const page = () => {
             </div>
             <div>
                 <Exp_skill></Exp_skill>
-            </div>
-            <div>
-                <Contactme></Contactme>
             </div>
         </div>
     );

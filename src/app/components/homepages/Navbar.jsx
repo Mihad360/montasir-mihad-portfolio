@@ -57,7 +57,7 @@ const Navbar = () => {
               <Link
                 className={`inline-block group relative leading-6 ${
                   pathname === "/"
-                    ? "text-blue-600 font-bold border-b-2 border-b-blue-600"
+                    ? "text-blue-600 font-bold"
                     : "" 
                 }`}
                 href="/"
@@ -94,12 +94,12 @@ const Navbar = () => {
             <li ref={(el) => (linkRefs.current[3] = el)}>
               <Link
                 className={`inline-block group relative leading-6 ${
-                  pathname === "/blogs" ? "text-blue-600 font-bold" : ""
+                  pathname === "/contactme" ? "text-blue-600 font-bold" : ""
                 }`}
-                href="/blogs"
+                href="/contactme"
               >
                 <span className="inline-block group-hover:text-blue-600 transition duration-300 hover:border-b-blue-600 hover:border-b-2 px-1">
-                  {wrapLetters("Blogs")}
+                  {wrapLetters("ContactMe")}
                 </span>
               </Link>
             </li>

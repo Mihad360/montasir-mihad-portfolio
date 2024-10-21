@@ -11,7 +11,7 @@ const ResumeCv = () => {
       </h1>
       <div className="flex justify-center gap-20 text-gray-100 pt-10 pb-12">
         <div className="text-center p-10 ">
-          <h1 className="text-2xl font-medium uppercase pb-3 text-blue-600">
+          <h1 className="text-2xl font-semibold uppercase pb-3 text-gray-400">
             Resume
           </h1>
           <h1 className="text-xl">
@@ -33,10 +33,10 @@ const ResumeCv = () => {
               href="https://drive.google.com/file/d/1oVnQKFYHSPKa2V7KlGWXClJ8gnSGeyTU/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-lg font-medium  border-2 border-blue-600 rounded-lg py-2 px-6 transition hover:scale-110 duration-300 hover:font-semibold hover:text-blue-600 text-white"
+              className="flex items-center gap-3 text-lg font-medium  bg-purple-700 hover:bg-purple-600 px-6 py-3 rounded-md transition hover:duration-200 hover:scale-105"
             >
               <FaEye />
-              <span className="hover:border-b hover:border-b-blue-600">
+              <span>
                 See Resume
               </span>
             </Link>
@@ -44,15 +44,15 @@ const ResumeCv = () => {
               target="_blank"
               href="/Montasir-Mihad-Resume (1).pdf"
               download="Montasir-Mihad-Resume (1).pdf"
-              className="flex items-center gap-3 text-lg font-medium  border-2 border-blue-600 rounded-lg py-2 px-6 transition hover:scale-110 duration-300 hover:font-semibold hover:text-blue-600 text-white"
+              className="flex items-center gap-3 text-lg font-medium  bg-purple-700 hover:bg-purple-600 px-6 py-3 rounded-md transition hover:duration-200 hover:scale-105"
             >
               <FaFileDownload />
-              <span className="hover:border-b hover:border-b-blue-600">
+              <span className="">
                 Download
               </span>
             </Link>
           </div>
-          <div className="px-10 py-5">
+          {/* <div className="px-10 py-5">
             <Image
               className="mx-auto"
               width={400}
@@ -60,11 +60,11 @@ const ResumeCv = () => {
               src="https://i.ibb.co.com/VSrrymh/Screenshot-2024-10-17-214222-removebg-preview.png"
               alt=""
             />
-          </div>
+          </div> */}
         </div>
 
         <div className="text-center p-10 ">
-          <h1 className="text-2xl font-medium uppercase pb-3 text-blue-600">
+          <h1 className="text-2xl font-semibold uppercase pb-3 text-gray-400">
             CV
           </h1>
           <h1 className="text-xl ">
@@ -85,10 +85,10 @@ const ResumeCv = () => {
               href="https://drive.google.com/file/d/1I5EHxWMlrFNFD96NsuLSKTQVVpG5nqmT/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 text-lg font-medium  border-2 border-blue-600 rounded-lg py-2 px-6 transition hover:scale-110 duration-300 hover:font-semibold hover:text-blue-600 text-white"
+              className="flex items-center gap-3 text-lg font-medium  bg-purple-700 hover:bg-purple-600 px-6 py-3 rounded-md transition hover:duration-200 hover:scale-105"
             >
               <FaEye />
-              <span className="hover:border-b hover:border-b-blue-600 ">
+              <span>
                 See CV
               </span>
             </Link>
@@ -96,15 +96,15 @@ const ResumeCv = () => {
               target="_blank"
               href="/CURRICULUM VITAE OF MIHAD.pdf"
               download="CURRICULUM VITAE OF MIHAD.pdf"
-              className="flex items-center gap-3 text-lg font-medium  border-2 border-blue-600 rounded-lg py-2 px-6 transition hover:scale-110 duration-300 hover:font-semibold hover:text-blue-600 text-white"
+              className="flex items-center gap-3 text-lg font-medium  bg-purple-700 hover:bg-purple-600 px-6 py-3 rounded-md transition hover:duration-200 hover:scale-105"
             >
               <FaFileDownload />
-              <span className="hover:border-b hover:border-b-blue-600">
+              <span>
                 Download
               </span>
             </Link>
           </div>
-          <div className="px-10 py-5">
+          {/* <div className="px-10 py-5">
             <Image
               className="mx-auto"
               width={400}
@@ -112,7 +112,7 @@ const ResumeCv = () => {
               src="https://i.ibb.co.com/VSrrymh/Screenshot-2024-10-17-214222-removebg-preview.png"
               alt=""
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

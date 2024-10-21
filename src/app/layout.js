@@ -1,3 +1,4 @@
+import { ToastContainer } from "react-toastify";
 import Navbar from "./components/homepages/Navbar";
 import { PageProvider } from "./components/pageContext";
 import "./globals.css";
@@ -13,7 +14,8 @@ export default function RootLayout({ children }) {
       <body
         className={`font antialiased`}
       >
-        <div className=" darker-gradient-bg min-h-screen">
+        <ToastContainer/>
+        <div className="darker-gradient-bg min-h-screen">
         <PageProvider>
           <div>
             <Navbar></Navbar>
