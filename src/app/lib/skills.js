@@ -55,13 +55,6 @@ export const skillsData = [
         logo: 'https://i.ibb.co.com/7GVQMk6/download-removebg-preview-3.png',
         percentage: 65,
     },
-    // {
-    //     id: 9,
-    //     name: 'Express.js',
-    //     description: 'A minimal and flexible Node.js web application framework.',
-    //     logo: 'https://i.ibb.co.com/6Hdzk54/1646733543-removebg-preview.png',
-    //     percentage: 62,
-    // },
     {
         id: 10,
         name: 'Tailwind CSS',

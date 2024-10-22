@@ -57,7 +57,7 @@ const Contactme = () => {
   };
 
   return (
-    <div className="pt-28">
+    <div className="pt-28 pb-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-around space-y-8 md:space-y-0 text-center text-white pb-12">
         {/* Div 1: Email Me */}
         <div className="space-y-4 flex flex-col items-center">

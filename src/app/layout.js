@@ -2,6 +2,7 @@ import { ToastContainer } from "react-toastify";
 import Navbar from "./components/homepages/Navbar";
 import { PageProvider } from "./components/pageContext";
 import "./globals.css";
+import Footer from "./components/homepages/Footer";
 
 export const metadata = {
   title: "Montasir Mihad Portfolio",
@@ -21,6 +22,9 @@ export default function RootLayout({ children }) {
             <Navbar></Navbar>
           </div>
         {children}
+        <div>
+          <Footer></Footer>
+        </div>
         </PageProvider>
         </div>
       </body>

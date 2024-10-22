@@ -1,21 +1,34 @@
 "use client";
-import { projectsData } from "@/app/lib/projects";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import ProjectBanner from "./ProjectBanner";
+import { getProjects } from "./api/getProjectData";
 
 const Projects = () => {
   const [selectedTech, setSelectedTech] = useState("All");
+  const [projects, setProjects] = useState([])
+  useEffect(()=>{
+    const fetchProjects = async () =>{
+      try {
+        const fetchProjects = await getProjects()
+        setProjects(fetchProjects)
+      } catch (error) {
+        console.log(error);
+      }
+    }
+    fetchProjects()
+  },[])
 
   // Correct filtering method
   const filteredProjects =
     selectedTech === "All"
-      ? projectsData
-      : projectsData.filter((project) =>
-          project.skills.includes(selectedTech)
-        );
+      ? projects
+      : projects.filter((project) => project.skills.includes(selectedTech));
 
   return (
-    <div className="px-4">
+    <div className="px-4 pb-16">
+      <ProjectBanner></ProjectBanner>
+
       <h1 className="text-white text-3xl font-bold text-center mb-10">
         My Projects
       </h1>
@@ -57,9 +70,9 @@ const Projects = () => {
                   {project.title}
                 </h3>
                 <ul className="text-gray-400 mb-6 pl-3 pt-3">
-                    <li className="list-disc">{project.description[0]}</li>
-                    <li className="list-disc">{project.description[1]}</li>
-                    <li className="list-disc">{project.description[2]}</li>
+                  <li className="list-disc">{project.description[0]}</li>
+                  <li className="list-disc">{project.description[1]}</li>
+                  <li className="list-disc">{project.description[2]}</li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.skills.map((tech) => (
@@ -83,7 +96,7 @@ const Projects = () => {
             </div>
           ))
         ) : (
-          <div className="col-span-full text-center text-white text-xl mt-10">
+          <div className="col-span-full text-center text-white text-xl mt-10 h-screen">
             There are no projects available for this skill.
           </div>
         )}

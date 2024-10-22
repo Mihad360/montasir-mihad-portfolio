@@ -53,7 +53,7 @@ const ColsAni = () => {
             transformOrigin = "0% 50%";
             scaleXvalue = 1; // Less intense
             scaleYvalue = 1; // Less compressed vertically
-            filterValue = "blur(0px)"; // Adjust blur
+            filterValue = "blur(2px)"; // Adjust blur
             break;
           case 1:
             // Center column remains static with less scaling
@@ -69,7 +69,7 @@ const ColsAni = () => {
             transformOrigin = "100% 50%";
             scaleXvalue = 1; // Less intense
             scaleYvalue = 1; // Less compressed vertically
-            filterValue = "blur(0px)"; // Adjust blur
+            filterValue = "blur(2px)"; // Adjust blur
             break;
         }
 
