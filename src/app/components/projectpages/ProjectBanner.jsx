@@ -5,17 +5,19 @@ import { getCarousel } from "./api/getProjectData";
 const ProjectBanner = () => {
   const [carouselData, setCarouselData] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [loading, setLoading] = useState(true); // State to manage loading
 
   // Fetch carousel data from backend
   useEffect(() => {
     const fetchCarouselData = async () => {
       try {
-        // const response = await fetch("/api/carousel"); // Fetch data from your backend
-        const carousels = await getCarousel();
+        const carousels = await getCarousel(); // Fetch data from your backend
         console.log(carousels);
         setCarouselData(carousels);
+        setLoading(false); // Stop loading once data is fetched
       } catch (error) {
         console.error("Error fetching carousel data", error);
+        setLoading(false); // Stop loading on error
       }
     };
 
@@ -33,8 +35,21 @@ const ProjectBanner = () => {
     return () => clearInterval(interval);
   }, [carouselData]);
 
+  if (loading) {
+    // Show loader while data is being fetched
+    return (
+      <div className="flex justify-center h-screen">
+        <span className="loading loading-spinner text-secondary w-20"></span>
+      </div>
+    );
+  }
+
   if (carouselData.length === 0) {
-    return <p>Loading carousel...</p>; // Show loading state while fetching data
+    return (
+      <div className="flex justify-center h-screen">
+        <p>No carousel data available.</p>
+      </div>
+    ); // Show message if there's no data
   }
 
   return (

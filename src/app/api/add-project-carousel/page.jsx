@@ -11,7 +11,7 @@ const Page = () => {
       image: event.target.image.value,
     }
     console.log(newProject);
-    const res = await fetch('http://localhost:3000/projects-data/api/add-carouse',{
+    const res = await fetch('http://localhost:3000/projects-data/api/add-carousel',{
       method: 'POST',
       body: JSON.stringify(newProject),
       headers: {

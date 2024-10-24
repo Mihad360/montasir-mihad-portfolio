@@ -108,7 +108,7 @@ const Contactme = () => {
             src="https://i.ibb.co.com/Rb2fm1W/Fancy-Octocat-guide-image-removebg-preview.png"
             alt="image"
           />
-          <h2 className="text-2xl font-semibold">Let’s Talk</h2>
+          <h2 className="text-2xl font-semibold">See my Github profile</h2>
           <p className="text-lg text-gray-400">
             I’m open to discussions, project ideas, or just a friendly chat.
           </p>
