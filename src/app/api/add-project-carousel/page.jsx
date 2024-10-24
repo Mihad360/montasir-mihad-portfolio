@@ -20,7 +20,7 @@ const Page = () => {
     })
     if(res.status === 200){
       event.target.reset()
-      toast.success('Project added successfully ✔️', {
+      toast.success('Added successfully ✔️', {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -31,7 +31,7 @@ const Page = () => {
         theme: "light",
         });
     }else{
-      toast.error('Project adding Failed ❌', {
+      toast.error('Adding Failed ❌', {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: true,

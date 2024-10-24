@@ -16,7 +16,7 @@ const AboutBannertwo = () => {
   useEffect(() => {
     const intervalId = setInterval(
       () => setIndex((index) => index + 1),
-      3000 // every 3 seconds
+      2000 // every 3 seconds
     );
     return () => clearTimeout(intervalId);
   }, []);
@@ -50,7 +50,7 @@ const AboutBannertwo = () => {
           {
             y: "0%", // End at the natural position
             opacity: 1, // Fully visible
-            duration: 0.1, // Duration for each letter
+            duration: 0.01, // Duration for each letter
             ease: "power2.out", // Easing function
             delay: letterIndex * 0.1, // Staggered delay based on the letter index
           }

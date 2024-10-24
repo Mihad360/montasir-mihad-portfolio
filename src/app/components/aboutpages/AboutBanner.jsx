@@ -24,12 +24,6 @@ const AboutBanner = () => {
               <h1 className="text-2xl md:text-4xl font-bold text-gray-200 pb-3 text-center pt-3">
                 Montasir Mihad
               </h1>
-              {/* <p className="flex items-center bg-gradient-to-b from-blue-500 to-warm-gray-300 text-gray-300 p-2 w-full md:w-56 rounded-lg mx-auto text-base md:text-xl dark:text-gray-300">
-                <Marquee className="flex gap-5 items-center" speed={50}>
-                  <div className="pr-5">Frontend Developer</div>
-                  <div>MERN Stack Developer</div>
-                </Marquee>
-              </p> */}
               <div className="h-8 w-40 rounded-full border border-gray-500 text-xs text-blue-600 font-normal uppercase lg:relative mt-5 lg:bottom-3 lg:right- lg:h-14 lg:w-[18vw] lg:text-xl overflow-hidden">
                 <div className="flex h-full cursor-pointer items-center whitespace-nowrap group">
                   <span className="animate-loopL group-hover:pause">MERN-STACK-DEVELOPER FRONT-END-DEVELOPER&nbsp;</span>

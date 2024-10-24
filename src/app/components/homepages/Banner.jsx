@@ -45,7 +45,7 @@ const Banner = () => {
   useEffect(() => {
     const titles = document.querySelectorAll('.h_title')
     const tl = gsap.timeline({defaults: {duration: 1}})
-    titles.forEach((title, index)=>{
+    titles.forEach((title, index) => {
       const el = title.querySelectorAll('span span')
       const delay = index * 0.08
       tl.to(
@@ -57,48 +57,52 @@ const Banner = () => {
         },
         delay
       )
-    })
-    return () => {}
+    });
+    return () => {};
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="flex items-center justify-between pt-32 px-5">
+    <div className="max-w-7xl mx-auto px-5">
+      <div className="flex flex-col md:flex-row items-center justify-between pt-32">
         <div className="text-white">
           <h1 className="h_title relative">
             <span className="overflow-hidden inline-block">
-              <span className="text-2xl tracking-widest -translate-y-full inline-block">
+              <span className="text-xl md:text-2xl tracking-widest -translate-y-full inline-block">
                 Hi, I am&nbsp;
               </span>
             </span>
           </h1>
-          <h1 className="h_title text-9xl relative leading-[90%]">
+          <h1 className="h_title text-6xl md:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
               <span className="pt-5 tracking-widest -translate-y-full inline-block">
                 Montasir&nbsp;
               </span>
             </span>
           </h1>
-          <h1 className="h_title text-9xl relative leading-[90%]">
+          <h1 className="h_title text-6xl md:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
               <span className="pt-3 tracking-widest -translate-y-full inline-block">
                 Ahmed&nbsp;
               </span>
             </span>
           </h1>
-          <h1 className="h_title text-9xl relative leading-[90%]">
+          <h1 className="h_title text-6xl md:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
               <span className="pt-3 tracking-widest -translate-y-full inline-block">
                 Mihad&nbsp;
               </span>
             </span>
           </h1>
-          <p className="uppercase text-lg pt-4 pl-1">
+          <p className="uppercase text-md md:text-lg pt-4 pl-1">
             <TypeAnimation
               sequence={[
                 "Front-end Developer",
                 2000,
                 "MERN Stack Developer",
+                2000,
+                "Learning & Improving daily",
+                2000,
+                "Doing more projects to make my skills more fresh",
                 2000,
               ]}
               speed={50}
@@ -106,31 +110,31 @@ const Banner = () => {
             />
           </p>
           <div className="flex justify-center md:justify-start items-center gap-4 pt-5 text-white pb-10 md:pb-0">
-          <Link
-            className="text-4xl hover:scale-125 duration-300 ease-in-out transition-all"
-            target="_blank"
-            href="mailto:ahmedmihad962@gmail.com"
-            rel="noopener noreferrer">
-            <MdEmail />
-          </Link>
-          <Link
-            className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
-            target="_blank"
-            href="https://www.facebook.com/MontasirMihad360"
-            rel="noopener noreferrer">
-            <FaSquareFacebook />
-          </Link>
-          <Link
-            className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
-            target="_blank"
-            href="https://github.com/Mihad360"
-            rel="noopener noreferrer">
-            <FaGithubSquare />
-          </Link>
-        </div>
+            <Link
+              className="text-4xl hover:scale-125 duration-300 ease-in-out transition-all"
+              target="_blank"
+              href="mailto:ahmedmihad962@gmail.com"
+              rel="noopener noreferrer">
+              <MdEmail />
+            </Link>
+            <Link
+              className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
+              target="_blank"
+              href="https://www.facebook.com/MontasirMihad360"
+              rel="noopener noreferrer">
+              <FaSquareFacebook />
+            </Link>
+            <Link
+              className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
+              target="_blank"
+              href="https://github.com/Mihad360"
+              rel="noopener noreferrer">
+              <FaGithubSquare />
+            </Link>
+          </div>
         </div>
         <div
-          className="pointer-event-auto cursor-pointer leading-none transition-height [&>p]:w-[500px] [&>p]:duration-500 [&>p]:ease-out"
+          className="pointer-event-auto cursor-pointer leading-none transition-height [&>p]:w-[250px] md:[&>p]:w-[500px] [&>p]:duration-500 [&>p]:ease-out"
           data-color="#0c5076"
           ref={logoRef}
           onMouseEnter={onLogoEnter}
@@ -138,7 +142,7 @@ const Banner = () => {
         >
           <p>
             <Image
-              className="w-[100%] h-full bg-[#4a30ab] rounded-full shadow-2xl shadow-gray-800"
+              className="w-full h-full bg-[#4a30ab] rounded-full shadow-2xl shadow-gray-800"
               width={500}
               height={500}
               src="https://i.ibb.co.com/tpzmdMJ/image-1-removebg-preview.png"

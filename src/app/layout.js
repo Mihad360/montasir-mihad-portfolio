@@ -1,3 +1,4 @@
+
 import { ToastContainer } from "react-toastify";
 import Navbar from "./components/homepages/Navbar";
 import { PageProvider } from "./components/pageContext";
@@ -10,6 +11,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en">
       <body

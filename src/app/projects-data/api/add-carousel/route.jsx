@@ -6,7 +6,7 @@ export const POST = async(request)=>{
     const projectCarouselCollection = db.collection('project-carousel')
     try {
         await projectCarouselCollection.insertOne(project);
-        return Response.json({message: 'Booked successfully', status: 200})
+        return Response.json({message: 'Added successfully', status: 200})
     } catch (error) {
         console.log(error);
         return Response.json({message: 'something went wrong'}, {status: 400})

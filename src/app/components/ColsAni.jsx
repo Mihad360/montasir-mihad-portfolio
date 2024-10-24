@@ -108,12 +108,12 @@ const ColsAni = () => {
   return (
     <div>
       <div className="max-w-7xl mx-auto px-5">
-        <div className="py-10 overflow-x-hidden">
+        <div className="py-10 overflow-x-hidden hidden md:block">
           <h2 className="text-4xl text-center text-white font-bold mb-10">
             Skills
           </h2>
           <div className="grid place-items-center relative px-4 md:px-10 lg:px-16">
-            <div className="columns w-full relative grid grid-cols-3 gap-4">
+            <div className="columns w-full relative grid grid-cols-2 md:grid-cols-3 gap-4">
               {/* column 1 */}
               <div className="column relative grid gap-4">
                 <div className="col-item relative z-10 ">

@@ -4,6 +4,11 @@ import AboutBanner from '../components/aboutpages/AboutBanner';
 import AboutBannertwo from '../components/aboutpages/AboutBannertwo';
 import Exp_skill from '../components/aboutpages/Exp_skill';
 
+export const metadata = {
+    title: "Mihad Portfolio | About",
+    description: "Montasir Mihad Portfolio",
+  };
+
 const page = () => {
     return (
         <div className='max-w-7xl mx-auto pt-24'>

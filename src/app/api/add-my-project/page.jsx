@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const AddProjectForm = ({ onSubmit }) => {
+const AddProjectForm = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState(["", "", ""]);
   const [skills, setSkills] = useState([""]);
@@ -29,17 +31,53 @@ const AddProjectForm = ({ onSubmit }) => {
     setSkills(updatedSkills);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
-    const newProject = { title, description, skills, image, link };
-    onSubmit(newProject);
+    const newProject = { 
+      title: title, 
+      description: description, 
+      skills: skills, 
+      image: image, 
+      link: link };
+    const res = await fetch('http://localhost:3000/projects-data/api/add-project',{
+      method: 'POST',
+      body: JSON.stringify(newProject),
+      headers: {
+        "content-type": "application/json"
+      }
+    })
+    if(res.status === 200){
+      e.target.reset()
+      toast.success('Project added successfully ✔️', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    }else{
+      toast.error('Project adding Failed ❌', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    }
+    console.log(res);
   };
 
   return (
-    <div className="pt-28">
+    <div className="pt-28 pb-12">
       <form
         onSubmit={handleSubmit}
-        className="bg-gray-100 p-8 rounded-xl shadow-lg max-w-5xl mx-auto border border-gray-200"
+        className="bg-gray-100 p-8 rounded-xl shadow-lg max-w-6xl mx-auto border border-gray-200"
         style={{
           borderRadius: "20px",
           boxShadow: "0 8px 30px rgba(0, 0, 0, 0.2)",
