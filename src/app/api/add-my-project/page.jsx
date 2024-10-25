@@ -1,4 +1,5 @@
 "use client";
+import axios from "axios";
 import React, { useState } from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -39,13 +40,7 @@ const AddProjectForm = () => {
       skills: skills, 
       image: image, 
       link: link };
-    const res = await fetch('http://localhost:3000/projects-data/api/add-project',{
-      method: 'POST',
-      body: JSON.stringify(newProject),
-      headers: {
-        "content-type": "application/json"
-      }
-    })
+    const res = await axios.post('https://montasir-mihad-portfolio-server.vercel.app/projects', newProject)
     if(res.status === 200){
       e.target.reset()
       toast.success('Project added successfully ✔️', {

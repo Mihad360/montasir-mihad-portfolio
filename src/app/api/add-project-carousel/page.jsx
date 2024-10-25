@@ -1,4 +1,5 @@
 "use client"
+import axios from 'axios';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -11,13 +12,7 @@ const Page = () => {
       image: event.target.image.value,
     }
     console.log(newProject);
-    const res = await fetch('http://localhost:3000/projects-data/api/add-carousel',{
-      method: 'POST',
-      body: JSON.stringify(newProject),
-      headers: {
-        "content-type": "application/json"
-      }
-    })
+    const res = await axios.post('https://montasir-mihad-portfolio-server.vercel.app/project-carousel', newProject)
     if(res.status === 200){
       event.target.reset()
       toast.success('Added successfully ✔️', {

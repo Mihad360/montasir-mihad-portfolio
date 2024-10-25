@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic"
+
 import ColsAni from "./components/ColsAni";
 import Banner from "./components/homepages/Banner";
 import ResumeCv from "./components/homepages/ResumeCv";

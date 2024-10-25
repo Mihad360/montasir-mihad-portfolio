@@ -1,11 +1,25 @@
-export const getCarousel = async () =>{
-    const res = await fetch('http://localhost:3000/projects-data/api/get-carousel')
-    const data = res.json()
-    return data
-}
+import axios from "axios";
 
-export const getProjects = async () =>{
-    const res = await fetch('http://localhost:3000/projects-data/api/get-projects')
-    const data = res.json()
-    return data
-}
+export const getCarousel = async () => {
+  try {
+    const res = await axios.get(
+      'https://montasir-mihad-portfolio-server.vercel.app/project-carousel'
+    );
+    return res.data;
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
+};
+
+export const getProjects = async () => {
+  try {
+    const res = await axios.get(
+      'https://montasir-mihad-portfolio-server.vercel.app/projects'
+    );
+    return res.data;
+  } catch (error) {
+    console.log(error);
+    return [];
+  }
+};
