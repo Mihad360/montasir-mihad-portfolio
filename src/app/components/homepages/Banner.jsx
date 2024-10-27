@@ -74,26 +74,26 @@ const Banner = () => {
           </h1>
           <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
-              <span className="pt-5 tracking-widest -translate-y-full inline-block">
+              <span className="pt-3 tracking-widest -translate-y-full inline-block">
                 Montasir&nbsp;
               </span>
             </span>
           </h1>
           <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
-              <span className="pt-3 tracking-widest -translate-y-full inline-block">
+              <span className="tracking-widest -translate-y-full inline-block">
                 Ahmed&nbsp;
               </span>
             </span>
           </h1>
           <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
-              <span className="pt-3 tracking-widest -translate-y-full inline-block">
+              <span className="tracking-widest -translate-y-full inline-block">
                 Mihad&nbsp;
               </span>
             </span>
           </h1>
-          <p className="uppercase text-md md:text-lg pt-4 pl-1">
+          <p className="uppercase text-md md:text-lg pt-3 pl-1">
             <TypeAnimation
               sequence={[
                 "Front-end Developer",
