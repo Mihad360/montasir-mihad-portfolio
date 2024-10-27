@@ -52,7 +52,7 @@ const Navbar = () => {
       <div className="header">
         <div className="header_container flex items-center gap-5 md:gap-0 justify-between py-4 border-b-gray-500 border-b fixed z-50 w-full max-w-7xl bg-slate-500 bg-opacity-10 rounded-b-lg px-5">
           <div className="header_logo text-3xl md:text-4xl lg:text-5xl text-white">
-            <RxModulzLogo />
+            <p><RxModulzLogo /></p>
           </div>
           <div className="relative">
             <ul className="flex flex-wrap items-center gap-2 md:gap-4 lg:gap-8 text-white uppercase [&>li]:text-xs md:[&>li]:text-base lg:[&>li]:text-lg [&>li]:duration-200 [&>li]:ease-out">

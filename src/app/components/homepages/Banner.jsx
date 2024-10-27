@@ -63,7 +63,7 @@ const Banner = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-5">
-      <div className="flex flex-col md:flex-row items-center justify-between pt-32">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-20 lg:gap-28 pt-28 px-0 md:px-10 lg:px-0">
         <div className="text-white">
           <h1 className="h_title relative">
             <span className="overflow-hidden inline-block">
@@ -72,21 +72,21 @@ const Banner = () => {
               </span>
             </span>
           </h1>
-          <h1 className="h_title text-6xl md:text-9xl relative leading-[90%]">
+          <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
               <span className="pt-5 tracking-widest -translate-y-full inline-block">
                 Montasir&nbsp;
               </span>
             </span>
           </h1>
-          <h1 className="h_title text-6xl md:text-9xl relative leading-[90%]">
+          <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
               <span className="pt-3 tracking-widest -translate-y-full inline-block">
                 Ahmed&nbsp;
               </span>
             </span>
           </h1>
-          <h1 className="h_title text-6xl md:text-9xl relative leading-[90%]">
+          <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
             <span className="overflow-hidden inline-block">
               <span className="pt-3 tracking-widest -translate-y-full inline-block">
                 Mihad&nbsp;
@@ -142,7 +142,7 @@ const Banner = () => {
         >
           <p>
             <Image
-              className="w-full h-full bg-[#4a30ab] rounded-full shadow-2xl shadow-gray-800"
+              className="w-full md:w-[300px] lg:w-[500px] h-full bg-[#4a30ab] rounded-full shadow-2xl shadow-gray-800 "
               width={500}
               height={500}
               src="https://i.ibb.co.com/tpzmdMJ/image-1-removebg-preview.png"

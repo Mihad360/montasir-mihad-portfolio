@@ -74,11 +74,11 @@ const ResumeCv = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-5">
+    <div className="max-w-7xl mx-auto lg:px-5">
       <p className="uppercase text-3xl text-center text-white pt-12 font-semibold">
         Resume - CV
       </p>
-      <div className="flex flex-col md:flex-row justify-center gap-10 text-gray-100 pt-10 pb-12">
+      <div className="flex flex-col md:flex-row justify-center md:gap-3 lg:gap-10 text-gray-100 pt-10 pb-12">
         <section className="hero">
           <div className="hero_wrapper">
             <div className="hero_paragraph text-center p-5 md:p-10">
@@ -104,7 +104,7 @@ const ResumeCv = () => {
                   className="flex items-center gap-3 text-lg font-medium bg-purple-700 hover:bg-purple-600 px-5 py-2 rounded-md transition hover:duration-200 hover:scale-105 scroll-button"
                 >
                   <FaEye />
-                  <span>See Resume</span>
+                  <span>Resume</span>
                 </Link>
                 <Link
                   target="_blank"
@@ -143,7 +143,7 @@ const ResumeCv = () => {
               className="flex items-center gap-3 text-lg font-medium bg-purple-700 hover:bg-purple-600 px-5 py-2 rounded-md transition hover:duration-200 hover:scale-105 scroll-button"
             >
               <FaEye />
-              <span>See CV</span>
+              <span>CV</span>
             </Link>
             <Link
               target="_blank"
