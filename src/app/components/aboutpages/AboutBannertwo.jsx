@@ -61,7 +61,7 @@ const AboutBannertwo = () => {
 
   return (
     <div>
-      <div className="p-5">
+      <div className="p-2 md:p-5">
         <h1 className="text-blue-600 pb-3 flex justify-end text-3xl font-semibold">
           <TextTransition springConfig={presets.wobbly}>
             {texts[index % texts.length]}
@@ -78,17 +78,17 @@ const AboutBannertwo = () => {
         <div className="p-5 pt-7 flex flex-col md:flex-row">
           <ol className="w-full md:w-[50%] pr-6 mb-10 md:mb-0">
             <li className="mb-10">
-              <h3 className="mb-1 text-2xl font-semibold text-gray-300 dark:text-white">
+              <h3 className="mb-1 text-lg lg:text-2xl font-semibold text-gray-300 dark:text-white">
                 Diploma in Computer Science & Technology (Present)
               </h3>
-              <h3 className="mb-1 text-lg font-semibold text-gray-500 dark:text-white">
+              <h3 className="mb-1 text-base lg:text-lg font-semibold text-gray-500 dark:text-white">
                 Dhaka Polytechnic Institute <br />
                 Dhaka-Bangladesh
               </h3>
               <time className="block mb-2 text-lg font-medium leading-none text-blue-500 dark:text-gray-500 pt-2">
                 2023-2026
               </time>
-              <p className="text-base font-normal text-gray-300 dark:text-gray-400 tracking-wide">
+              <p className="text-sm lg:text-base font-normal text-gray-300 dark:text-gray-400 tracking-wide">
                 At Present I am studying at the CST department of Dhaka
                 Polytechnic Institute
               </p>
@@ -104,16 +104,16 @@ const AboutBannertwo = () => {
               <span className="absolute flex items-center justify-center p-2 -left-4 text-2xl bg-blue-600 rounded-full dark:ring-gray-900 dark:bg-blue-900 mt-0 md:mt-48 text-black">
                 <GrWaypoint />
               </span>
-              <h3 className="mb-1 text-2xl font-semibold text-gray-300 dark:text-white pt-20 md:pt-48">
+              <h3 className="mb-1 text-lg lg:text-2xl font-semibold text-gray-300 dark:text-white pt-20 md:pt-48">
                 Secondary School Certificate
               </h3>
-              <h3 className="mb-1 text-lg font-semibold text-gray-500 dark:text-white">
+              <h3 className="mb-1 text-base lg:text-lg font-semibold text-gray-500 dark:text-white">
                 Merchant Workers High School, Narayanganj-Bangladesh
               </h3>
               <time className="block mb-2 text-lg font-medium leading-none text-blue-500 dark:text-gray-500 pt-2">
                 2020-2022
               </time>
-              <p className="text-base font-normal text-gray-300 dark:text-gray-400 tracking-wide">
+              <p className="text-sm lg:text-base font-normal text-gray-300 dark:text-gray-400 tracking-wide">
                 After junior school passing I cleared my SSC (Secondary School
                 Certificate) from this school.
               </p>

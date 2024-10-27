@@ -39,7 +39,7 @@ const Projects = () => {
           <button
             key={tech}
             onClick={() => setSelectedTech(tech)}
-            className={`px-6 py-2 text-lg font-semibold rounded-full transition-all duration-300 ${
+            className={`px-6 py-2 text-base md:text-lg font-semibold rounded-full transition-all duration-300 ${
               selectedTech === tech
                 ? "bg-fuchsia-600 text-white shadow-lg transform scale-105"
                 : "bg-gray-800 text-white hover:bg-fuchsia-600"

@@ -12,7 +12,7 @@ export const metadata = {
 const page = () => {
     return (
         <div className='max-w-7xl mx-auto pt-24'>
-            <div className='flex gap-5 border-b border-gray-400'>
+            <div className='flex flex-col md:flex-row px-3 md:px-0 gap-5 border-b border-gray-400'>
                 <AboutBanner></AboutBanner>
                 <AboutBannertwo></AboutBannertwo>
             </div>

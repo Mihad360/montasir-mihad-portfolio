@@ -58,7 +58,7 @@ const Contactme = () => {
 
   return (
     <div className="pt-28 pb-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-around space-y-8 md:space-y-0 text-center text-white pb-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-0 justify-center space-y-8 md:space-y-0 text-center text-white pb-12">
         {/* Div 1: Email Me */}
         <div className="space-y-4 flex flex-col items-center">
           <Image
@@ -67,15 +67,15 @@ const Contactme = () => {
             src="https://i.ibb.co.com/L0F3pzn/107135-OMVKHI-425-removebg-preview.png"
             alt="image"
           />
-          <h2 className="text-2xl font-semibold">Email Me</h2>
-          <p className="text-lg text-gray-400">
+          <h2 className="text-lg lg:text-2xl font-semibold">Email Me</h2>
+          <p className="text-xs lg:text-lg text-gray-400">
             Reach out via email for any inquiries or collaboration ideas.
           </p>
           <button
             onClick={scrollToEmail}
-            className="bg-purple-700 hover:bg-purple-600 px-6 py-3 text-lg font-medium rounded-md transition"
+            className="bg-purple-700 hover:bg-purple-600 px-6 py-3 text-xs lg:text-lg font-medium rounded-md transition"
           >
-            Go to Email Form
+            Email Me
           </button>
         </div>
 
@@ -87,16 +87,16 @@ const Contactme = () => {
             src="https://i.ibb.co.com/LPF9Mnz/317901-P97-D3-H-889-removebg-preview.png"
             alt="image"
           />
-          <h2 className="text-2xl font-semibold">Connect on Socials</h2>
-          <p className="text-lg text-gray-400">
+          <h2 className="text-lg lg:text-2xl font-semibold">Connect on Socials</h2>
+          <p className="text-xs lg:text-lg text-gray-400">
             Follow me on social platforms for the latest updates.
           </p>
           <Link
             target="_blank"
             href="https://www.facebook.com/MontasirMihad360"
-            className="bg-purple-700 hover:bg-purple-600 px-6 py-3 text-lg font-medium rounded-md transition"
+            className="bg-purple-700 hover:bg-purple-600 px-6 py-3 text-xs lg:text-lg font-medium rounded-md transition"
           >
-            View Facebook Profile
+            Facebook
           </Link>
         </div>
 
@@ -108,17 +108,17 @@ const Contactme = () => {
             src="https://i.ibb.co.com/Rb2fm1W/Fancy-Octocat-guide-image-removebg-preview.png"
             alt="image"
           />
-          <h2 className="text-2xl font-semibold">See my Github profile</h2>
-          <p className="text-lg text-gray-400">
+          <h2 className="text-lg lg:text-2xl font-semibold">See my Github profile</h2>
+          <p className="text-xs lg:text-lg text-gray-400">
             I’m open to discussions, project ideas, or just a friendly chat.
           </p>
           <Link
             target="_blank"
             href="https://github.com/Mihad360"
             onClick={scrollToEmail}
-            className="bg-purple-700 hover:bg-purple-600 px-6 py-3 text-lg font-medium rounded-md transition"
+            className="bg-purple-700 hover:bg-purple-600 px-6 py-3 text-xs lg:text-lg font-medium rounded-md transition"
           >
-            See my Github profile
+            Github
           </Link>
         </div>
       </div>
@@ -129,7 +129,7 @@ const Contactme = () => {
         ref={emailSectionRef}
         className="py-10 px-5 flex justify-center items-center bg-gradient-to-br from-[#200a30] via-[#2a0037] to-[#35005b]"
       >
-        <div className="flex flex-col lg:flex-row bg-[#1f1b2e] rounded-lg shadow-lg overflow-hidden max-w-6xl">
+        <div className="flex flex-col md:flex-row bg-[#1f1b2e] rounded-lg shadow-lg overflow-hidden max-w-6xl">
           {/* Left Div with Image */}
           <div className="lg:w-1/2 flex justify-center items-center p-5">
             <Image
