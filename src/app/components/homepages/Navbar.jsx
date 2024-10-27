@@ -59,12 +59,12 @@ const Navbar = () => {
               <li ref={(el) => (linkRefs.current[0] = el)}>
                 <Link
                   className={`inline-block group relative leading-6 ${
-                    pathname === "/" ? "text-blue-600 font-bold" : ""
+                    pathname === "/" ? "text-fuchsia-600 font-bold" : ""
                   }`}
                   href="/"
                   onClick={handleReload}
                 >
-                  <span className="inline-block group-hover:text-blue-600 transition duration-300 hover:border-b-blue-600 hover:border-b-2 px-1">
+                  <span className="inline-block group-hover:text-fuchsia-600 transition duration-300 hover:border-b-fuchsia-600 hover:border-b-2 px-1">
                     {wrapLetters("Home")}
                   </span>
                 </Link>
@@ -72,12 +72,12 @@ const Navbar = () => {
               <li ref={(el) => (linkRefs.current[1] = el)}>
                 <Link
                   className={`inline-block group relative leading-6 ${
-                    pathname === "/about" ? "text-blue-600 font-bold" : ""
+                    pathname === "/about" ? "text-fuchsia-600 font-bold" : ""
                   }`}
                   href="/about"
                   onClick={handleReload}
                 >
-                  <span className="inline-block group-hover:text-blue-600 transition duration-300 hover:border-b-blue-600 hover:border-b-2 px-1">
+                  <span className="inline-block group-hover:text-fuchsia-600 transition duration-300 hover:border-b-fuchsia-600 hover:border-b-2 px-1">
                     {wrapLetters("About")}
                   </span>
                 </Link>
@@ -85,12 +85,12 @@ const Navbar = () => {
               <li ref={(el) => (linkRefs.current[2] = el)}>
                 <Link
                   className={`inline-block group relative leading-6 ${
-                    pathname === "/projects" ? "text-blue-600 font-bold" : ""
+                    pathname === "/projects" ? "text-fuchsia-600 font-bold" : ""
                   }`}
                   href="/projects"
                   onClick={handleReload}
                 >
-                  <span className="inline-block group-hover:text-blue-600 transition duration-300 hover:border-b-blue-600 hover:border-b-2 px-1">
+                  <span className="inline-block group-hover:text-fuchsia-600 transition duration-300 hover:border-b-fuchsia-600 hover:border-b-2 px-1">
                     {wrapLetters("Projects")}
                   </span>
                 </Link>
@@ -98,12 +98,12 @@ const Navbar = () => {
               <li ref={(el) => (linkRefs.current[3] = el)}>
                 <Link
                   className={`inline-block group relative leading-6 ${
-                    pathname === "/contactme" ? "text-blue-600 font-bold" : ""
+                    pathname === "/contactme" ? "text-fuchsia-600 font-bold" : ""
                   }`}
                   href="/contactme"
                   onClick={handleReload}
                 >
-                  <span className="inline-block group-hover:text-blue-600 transition duration-300 hover:border-b-blue-600 hover:border-b-2 px-1">
+                  <span className="inline-block group-hover:text-fuchsia-600 transition duration-300 hover:border-b-fuchsia-600 hover:border-b-2 px-1">
                     {wrapLetters("Contact Me")}
                   </span>
                 </Link>

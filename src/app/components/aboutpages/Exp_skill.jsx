@@ -11,7 +11,7 @@ const Exp_skill = () => {
     <div>
       <div className="flex flex-col md:flex-row gap-6 pb-20 pt-12">
         <div className="border rounded-lg border-gray-400 p-5 w-full md:w-[50%]">
-          <h1 className="text-blue-600 font-semibold text-3xl flex items-center gap-5">
+          <h1 className="text-fuchsia-600 font-semibold text-3xl flex items-center gap-5">
             <span>Experience</span>
             <FaFileExport />
           </h1>
@@ -26,19 +26,19 @@ const Exp_skill = () => {
             </h1>
             <h1 className="pl-12 pt-2 text-lg text-gray-300 dark:text-white">
               2023 -{" "}
-              <span className="text-blue-600 font-semibold text-xl">
+              <span className="text-fuchsia-600 font-semibold text-xl">
                 Present
               </span>
             </h1>
             <p className="pl-12 dark:text-gray-300 text-gray-300">
               As a junior React developer with
-              <span className="text-blue-600 font-medium"> 8</span> months of
-              course at <span className="text-blue-600 font-medium">Programming Hero</span> , I've honed my skills in crafting
+              <span className="text-fuchsia-600 font-medium"> 8</span> months of
+              course at <span className="text-fuchsia-600 font-medium">Programming Hero</span> , I've honed my skills in crafting
               responsive UIs and implementing features. Passionate about
               learning and contributing to innovative web solutions with
               enthusiasm and dedication.{" "}
               <a
-                className="text-blue-600 font-semibold underline"
+                className="text-fuchsia-600 font-semibold underline"
                 href="https://drive.google.com/file/d/1n8iP7yRxF-KFliOEAPKuVAQpakV5TZg6/view?usp=sharing"
                 target="_blank"
               >
@@ -46,7 +46,7 @@ const Exp_skill = () => {
               </a>
             </p>
           </div>
-          <h1 className="text-blue-600 font-semibold text-3xl flex items-center gap-5 pt-8">
+          <h1 className="text-fuchsia-600 font-semibold text-3xl flex items-center gap-5 pt-8">
             <span>Currently Focused</span>
             <MdCenterFocusStrong />
           </h1>
@@ -66,7 +66,7 @@ const Exp_skill = () => {
           </div>
         </div>
         <div className="border rounded-lg border-gray-400 p-5 w-full md:w-[50%]">
-          <h1 className="text-blue-600 font-semibold text-3xl flex items-center gap-5">
+          <h1 className="text-fuchsia-600 font-semibold text-3xl flex items-center gap-5">
             <span>Skills</span>
             <GiSkills />
           </h1>
@@ -79,7 +79,7 @@ const Exp_skill = () => {
             Let's collaborate!
           </p>
           <div>
-            <h1 className="text-blue-600 font-semibold text-3xl flex items-center gap-5 pt-8">
+            <h1 className="text-fuchsia-600 font-semibold text-3xl flex items-center gap-5 pt-8">
               <span>Love to do</span>
               <FaClover />
             </h1>

@@ -13,7 +13,7 @@ const Footer = () => {
               {/* Logo and Website Name Section */}
               <div>
                 <h1>
-                  <RxModulzLogo className="mx-auto text-5xl text-blue-600" />
+                  <RxModulzLogo className="mx-auto text-5xl text-fuchsia-600" />
                 </h1>
                 <h2 className="text-2xl font-bold mt-4">Montasir Mihad</h2>
               </div>

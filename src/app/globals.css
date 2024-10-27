@@ -237,3 +237,9 @@ body.hide_header .header{
     stroke-dashoffset: 176;
   }
 }
+
+@media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}

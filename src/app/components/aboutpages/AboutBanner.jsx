@@ -24,15 +24,15 @@ const AboutBanner = () => {
               <h1 className="text-2xl md:text-4xl font-bold text-gray-200 pb-3 text-center pt-3">
                 Montasir Mihad
               </h1>
-              <div className="h-8 md:w-40 rounded-full border border-gray-500 text-xs text-blue-600 font-normal uppercase lg:relative mt-5 lg:bottom-3 lg:right- lg:h-14 lg:w-[18vw] lg:text-xl overflow-hidden">
+              <div className="h-8 md:w-40 rounded-full border border-gray-500 text-xs text-fuchsia-600 font-normal uppercase lg:relative mt-5 lg:bottom-3 lg:right- lg:h-14 lg:w-[18vw] lg:text-xl overflow-hidden">
                 <div className="flex h-full cursor-pointer items-center whitespace-nowrap group">
                   <span className="animate-loopL group-hover:pause">MERN-STACK-DEVELOPER FRONT-END-DEVELOPER&nbsp;</span>
                   <span className="animate-loopL group-hover:pause">MERN-STACK-DEVELOPER FRONT-END-DEVELOPER&nbsp;</span>
                 </div>
               </div>
-              <p className="border border-blue-600 mt-6"></p>
+              <p className="border border-fuchsia-600 mt-6"></p>
               <div className="flex items-center gap-3 pt-6">
-                <p className="text-blue-600 text-4xl">
+                <p className="text-fuchsia-600 text-4xl">
                   <MdOutlineEmail />
                 </p>
                 <div>
@@ -45,7 +45,7 @@ const AboutBanner = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3 pt-6">
-                <p className="text-blue-600 text-4xl">
+                <p className="text-fuchsia-600 text-4xl">
                   <MdPhonelinkRing />
                 </p>
                 <div>
@@ -58,7 +58,7 @@ const AboutBanner = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3 pt-6">
-                <p className="text-blue-600 text-4xl">
+                <p className="text-fuchsia-600 text-4xl">
                   <GrLocation />
                 </p>
                 <div>
@@ -71,7 +71,7 @@ const AboutBanner = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3 pt-6">
-                <p className="text-blue-600 text-4xl">
+                <p className="text-fuchsia-600 text-4xl">
                   <LiaBirthdayCakeSolid />
                 </p>
                 <div>
@@ -83,7 +83,7 @@ const AboutBanner = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-center gap-6 pt-5 text-blue-600 font-bold">
+              <div className="flex items-center justify-center gap-6 pt-5 text-fuchsia-600 font-bold">
                 <a
                   className="text-4xl hover:scale-150 duration-300 ease-in-out transition-all"
                   target="_blank"
