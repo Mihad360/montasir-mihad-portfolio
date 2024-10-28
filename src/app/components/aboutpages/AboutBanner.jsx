@@ -24,7 +24,7 @@ const AboutBanner = () => {
               <h1 className="text-2xl md:text-4xl font-bold text-gray-200 pb-3 text-center pt-3">
                 Montasir Mihad
               </h1>
-              <div className="h-8 md:w-40 rounded-full border border-gray-500 text-xs text-fuchsia-600 font-normal uppercase lg:relative mt-5 lg:bottom-3 lg:right- lg:h-14 lg:w-[18vw] lg:text-xl overflow-hidden">
+              <div className="h-8 md:w-40 rounded-full border border-gray-500 text-base text-white font-normal uppercase lg:relative mt-5 lg:bottom-3 lg:right- lg:h-14 lg:w-[18vw] lg:text-xl overflow-hidden">
                 <div className="flex h-full cursor-pointer items-center whitespace-nowrap group">
                   <span className="animate-loopL group-hover:pause">MERN-STACK-DEVELOPER FRONT-END-DEVELOPER&nbsp;</span>
                   <span className="animate-loopL group-hover:pause">MERN-STACK-DEVELOPER FRONT-END-DEVELOPER&nbsp;</span>

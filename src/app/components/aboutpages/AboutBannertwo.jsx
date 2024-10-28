@@ -68,7 +68,7 @@ const AboutBannertwo = () => {
           </TextTransition>
         </h1>
         <span ref={(el) => (linkRefs.current[0] = el)} className="md:text-lg text-gray-300 tracking-wide pt-5 dark:text-white">
-          {wrapLetters("I'm a student developer living in the bustling city of Narayanganj, Dhaka. Fueled by coffee-tea and late   nights, I'm obsessed with building beautiful and intuitive user interfaces that come alive with the power ofthe MERN Stack MongoDB, Express.js, React.js, Node.js. Every pixel matters to me, and I love crafting   seamless user experiences that make the web a joy to navigate. My journey's just beginning and I'm con-stantly pushing the boundaries of frontend development. Dive into my portfolio and witness the transformation of a passionate developer in the making!")}
+          {wrapLetters("I'm a student developer living in the bustling city of Narayanganj, Dhaka. Fueled by coffee-tea and late nights, I'm obsessed with building beautiful and intuitive user interfaces that come alive with the power ofthe MERN Stack MongoDB, Express.js, React.js, Node.js. Every pixel matters to me, and I love crafting seamless user experiences that make the web a joy to navigate. My journey's just beginning and I'm con-stantly pushing the boundaries of frontend development. Dive into my portfolio and witness the transformation of a passionate developer in the making!")}
         </span>
         <h1 className="text-fuchsia-600 font-semibold text-3xl pt-7 flex items-center justify-end gap-5">
           <span>Education</span>

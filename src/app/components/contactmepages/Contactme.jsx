@@ -60,7 +60,7 @@ const Contactme = () => {
     <div className="pt-28 pb-20">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-0 justify-center space-y-8 md:space-y-0 text-center text-white pb-12">
         {/* Div 1: Email Me */}
-        <div className="space-y-4 flex flex-col items-center">
+        <div className="space-y-4 lg:w-60 mx-auto flex flex-col items-center">
           <Image
             width={300}
             height={300}
@@ -80,16 +80,16 @@ const Contactme = () => {
         </div>
 
         {/* Div 2: Connect on Socials */}
-        <div className="space-y-4 flex flex-col items-center">
+        <div className="space-y-4 lg:w-80 mx-auto flex flex-col items-center">
           <Image
             width={300}
             height={300}
-            src="https://i.ibb.co.com/LPF9Mnz/317901-P97-D3-H-889-removebg-preview.png"
+            src="https://i.ibb.co.com/47BfztX/317901-P97-D3-H-889-removebg-preview.png"
             alt="image"
           />
           <h2 className="text-lg lg:text-2xl font-semibold">Connect on Socials</h2>
           <p className="text-xs lg:text-lg text-gray-400">
-            Follow me on social platforms for the latest updates.
+            Follow me on social platforms <br /> for the latest updates.
           </p>
           <Link
             target="_blank"
@@ -101,8 +101,8 @@ const Contactme = () => {
         </div>
 
         {/* Div 3: Let's Talk */}
-        <div className="space-y-4 flex flex-col items-center">
-          <Image
+        <div className="space-y-4 lg:w-80 mx-auto flex flex-col items-center">
+          <Image className=""
             width={400}
             height={400}
             src="https://i.ibb.co.com/Rb2fm1W/Fancy-Octocat-guide-image-removebg-preview.png"

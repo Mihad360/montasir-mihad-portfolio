@@ -118,7 +118,7 @@ const ColsAni = () => {
               <div className="column relative grid gap-4">
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap [aspect-ratio:0.6] md:h-auto relative overflow-hidden h-52 ">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
@@ -173,7 +173,7 @@ const ColsAni = () => {
                 </div>
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap w-full [aspect-ratio:0.6] h-52 md:h-auto relative overflow-hidden rounded-none">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
@@ -228,7 +228,7 @@ const ColsAni = () => {
                 </div>
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap w-full [aspect-ratio:0.6] h-52 md:h-auto relative overflow-hidden rounded-none">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
@@ -287,7 +287,7 @@ const ColsAni = () => {
               <div className="column w-full relative grid gap-4">
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap w-full [aspect-ratio:0.6] h-52 md:h-auto relative overflow-hidden rounded-none">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
@@ -342,7 +342,7 @@ const ColsAni = () => {
                 </div>
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap w-full [aspect-ratio:0.6] h-52 md:h-auto relative overflow-hidden rounded-none">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
@@ -397,7 +397,7 @@ const ColsAni = () => {
                 </div>
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap w-full [aspect-ratio:0.6] h-52 md:h-auto relative overflow-hidden rounded-none">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
@@ -456,7 +456,7 @@ const ColsAni = () => {
               <div className="column w-full relative grid gap-4">
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap w-full [aspect-ratio:0.6] h-52 md:h-auto relative overflow-hidden rounded-none">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
@@ -511,7 +511,7 @@ const ColsAni = () => {
                 </div>
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap w-full [aspect-ratio:0.6] h-52 md:h-auto relative overflow-hidden rounded-none">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
@@ -566,7 +566,7 @@ const ColsAni = () => {
                 </div>
                 <div className="col-item relative z-10 ">
                   <div className="img-wrap w-full [aspect-ratio:0.6] h-52 md:h-auto relative overflow-hidden rounded-none">
-                    <div className="img absolute top-0 left-0 w-24 md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
+                    <div className="img absolute top-0 left-0 w-[102px] md:w-full  [backface-visibility:hidden] md:pt-6 bg-gradient-to-br from-black via-gray-900 to-indigo-950 bg-opacity-80 rounded-lg shadow-lg px-1 md:px-6 hover:scale-105 transition-transform duration-300 ">
                       <div className="pt-1 md:pt-5">
                         <Image
                           className=""
