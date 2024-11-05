@@ -108,7 +108,7 @@ const ResumeCv = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href="/Montasir-Mihad-Resume (1).pdf"
+                  href="/Montasir-Mihad-Resume.pdf"
                   download="Montasir-Mihad-Resume (1).pdf"
                   className="flex items-center gap-3 text-lg font-medium bg-purple-700 hover:bg-purple-600 px-5 py-2 rounded-md transition hover:duration-200 hover:scale-105 scroll-button"
                 >
