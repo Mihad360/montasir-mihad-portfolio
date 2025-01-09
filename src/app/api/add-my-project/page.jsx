@@ -1,8 +1,8 @@
 "use client";
 import axios from "axios";
 import React, { useState } from "react";
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AddProjectForm = () => {
   const [title, setTitle] = useState("");
@@ -10,6 +10,8 @@ const AddProjectForm = () => {
   const [skills, setSkills] = useState([""]);
   const [image, setImage] = useState("");
   const [link, setLink] = useState("");
+  const [clientGithub, setClientGithub] = useState(""); // Client-side GitHub link
+  const [serverGithub, setServerGithub] = useState(""); // Server-side GitHub link
 
   const handleDescriptionChange = (index, value) => {
     const updatedDescription = [...description];
@@ -32,18 +34,24 @@ const AddProjectForm = () => {
     setSkills(updatedSkills);
   };
 
-  const handleSubmit =async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const newProject = { 
-      title: title, 
-      description: description, 
-      skills: skills, 
-      image: image, 
-      link: link };
-    const res = await axios.post('https://montasir-mihad-portfolio-server.vercel.app/projects', newProject)
-    if(res.status === 200){
-      e.target.reset()
-      toast.success('Project added successfully ✔️', {
+    const newProject = {
+      title: title,
+      description: description,
+      skills: skills,
+      image: image,
+      link: link,
+      clientGithubLink: clientGithub, 
+      serverGithubLink: serverGithub, 
+    };
+    const res = await axios.post(
+      "https://montasir-mihad-portfolio-server.vercel.app/projects",
+      newProject
+    );
+    if (res.status === 200) {
+      e.target.reset();
+      toast.success("Project added successfully ✔️", {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -52,9 +60,9 @@ const AddProjectForm = () => {
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
-    }else{
-      toast.error('Project adding Failed ❌', {
+      });
+    } else {
+      toast.error("Project adding Failed ❌", {
         position: "top-right",
         autoClose: 2000,
         hideProgressBar: true,
@@ -63,7 +71,7 @@ const AddProjectForm = () => {
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
+      });
     }
     console.log(res);
   };
@@ -84,7 +92,7 @@ const AddProjectForm = () => {
 
         {/* Flex container for left and right sections */}
         <div className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
-          {/* Left Side (Title, Image URL, Link) */}
+          {/* Left Side (Title, Image URL, Link, GitHub URL) */}
           <div className="flex-1 space-y-6">
             <div>
               <label
@@ -137,6 +145,41 @@ const AddProjectForm = () => {
                 className="w-full p-3 rounded-lg border border-gray-300 focus:border-fuchsia-500 focus:ring-2 focus:ring-fuchsia-500"
                 placeholder="Enter project link"
                 required
+              />
+            </div>
+
+            {/* GitHub Links Input */}
+            <div>
+              <label
+                htmlFor="clientGithub"
+                className="block text-lg font-semibold text-gray-800"
+              >
+                Client-Side GitHub Link
+              </label>
+              <input
+                id="clientGithub"
+                type="text"
+                value={clientGithub}
+                onChange={(e) => setClientGithub(e.target.value)}
+                className="w-full p-3 rounded-lg border border-gray-300 focus:border-fuchsia-500 focus:ring-2 focus:ring-fuchsia-500"
+                placeholder="Enter Client-Side GitHub link"
+              />
+            </div>
+
+            <div>
+              <label
+                htmlFor="serverGithub"
+                className="block text-lg font-semibold text-gray-800"
+              >
+                Server-Side GitHub Link
+              </label>
+              <input
+                id="serverGithub"
+                type="text"
+                value={serverGithub}
+                onChange={(e) => setServerGithub(e.target.value)}
+                className="w-full p-3 rounded-lg border border-gray-300 focus:border-fuchsia-500 focus:ring-2 focus:ring-fuchsia-500"
+                placeholder="Enter Server-Side GitHub link"
               />
             </div>
           </div>

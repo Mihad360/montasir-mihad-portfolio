@@ -1,13 +1,18 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import Link from "next/link";
 import { RxModulzLogo } from "react-icons/rx";
 import { usePathname } from "next/navigation";
+import { FiMenu, FiX } from "react-icons/fi";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const linkRefs = useRef([]);
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null); // Ref for mobile menu container
+  // const router = useRouter();
 
   const wrapLetters = (text) => {
     return text.split("").map((letter, index) => (
@@ -40,22 +45,64 @@ const Navbar = () => {
         });
       });
     }
+
+    // Close mobile menu if clicked outside
+    const handleClickOutside = (event) => {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target) &&
+        !event.target.closest("button")
+      ) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    // Attach the click event listener
+    document.addEventListener("mousedown", handleClickOutside);
+
+    // Cleanup event listener on unmount
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
-  const handleReload = (e) => {
+  const handleReload = async (e) => {
     e.preventDefault(); // Prevent default link behavior
-    window.location.href = e.currentTarget.href; // Use window.location.href to reload
+    // window.location.reload()
+    // if(e.currentTarget.href){
+    //   window.location.reload()
+    // }
+    window.location.href = await e.currentTarget.href; // Use window.location.href to reload
   };
 
+// const handleReload = async (e) => {
+//   e.preventDefault(); // Prevent default link behavior
+//   const { href } = e.currentTarget;
+
+//   if (href) {
+//     // Navigate to the route first
+//     await router.push(href);
+
+//     // After navigating, reload the page or trigger any necessary refetch
+//     window.location.reload(); // This will reload the page after navigation
+//   }
+// };
+
+
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="header">
-        <div className="header_container flex items-center gap-5 md:gap-0 justify-between py-4 border-b-gray-500 border-b fixed z-50 w-full max-w-7xl bg-slate-900 bg-opacity-60 rounded-b-lg px-5">
-          <div className="header_logo text-3xl md:text-4xl lg:text-5xl text-white">
-            <p><RxModulzLogo /></p>
+    <div>
+      <div>
+        <div className="flex items-center gap-5 md:gap-0 justify-between py-4 border-b-gray-500 border-b bg-slate-900 bg-opacity-60 rounded-b-lg px-5">
+          {/* Logo */}
+          <div className="text-3xl md:text-4xl lg:text-5xl text-white">
+            <p>
+              <RxModulzLogo />
+            </p>
           </div>
-          <div className="relative">
-            <ul className="flex flex-wrap items-center gap-2 md:gap-4 lg:gap-8 text-white uppercase [&>li]:text-xs md:[&>li]:text-base lg:[&>li]:text-lg [&>li]:duration-200 [&>li]:ease-out">
+
+          {/* Desktop Menu */}
+          <div className="hidden md:block">
+            <ul className="flex items-center gap-2 md:gap-4 lg:gap-8 text-white uppercase">
               <li ref={(el) => (linkRefs.current[0] = el)}>
                 <Link
                   className={`inline-block group relative leading-6 ${
@@ -98,7 +145,9 @@ const Navbar = () => {
               <li ref={(el) => (linkRefs.current[3] = el)}>
                 <Link
                   className={`inline-block group relative leading-6 ${
-                    pathname === "/contactme" ? "text-fuchsia-600 font-bold" : ""
+                    pathname === "/contactme"
+                      ? "text-fuchsia-600 font-bold"
+                      : ""
                   }`}
                   href="/contactme"
                   onClick={handleReload}
@@ -109,6 +158,45 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className="block md:hidden">
+            <button
+              className="text-white text-2xl"
+              onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+            >
+              {isMobileMenuOpen ? <FiX /> : <FiMenu />}
+            </button>
+            {isMobileMenuOpen && (
+              <div
+                ref={mobileMenuRef} // Assign the ref to the mobile menu container
+                className="absolute top-16 right-0 bg-slate-900 bg-opacity-90 text-white p-5 rounded-lg shadow-lg"
+              >
+                <ul className="flex flex-col gap-4">
+                  <li>
+                    <Link href="/" onClick={handleReload}>
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" onClick={handleReload}>
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/projects" onClick={handleReload}>
+                      Projects
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contactme" onClick={handleReload}>
+                      Contact Me
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </div>

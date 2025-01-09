@@ -98,7 +98,7 @@ const ResumeCv = () => {
               </ul>
               <div className="flex flex-col md:flex-row items-center gap-5 justify-center pt-5">
                 <Link
-                  href="https://drive.google.com/file/d/1oVnQKFYHSPKa2V7KlGWXClJ8gnSGeyTU/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1SJHZMgyPUsFOG9XmIdP76h1wD5RqprQs/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-lg font-medium bg-purple-700 hover:bg-purple-600 px-5 py-2 rounded-md transition hover:duration-200 hover:scale-105 scroll-button"

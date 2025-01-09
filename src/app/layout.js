@@ -1,6 +1,5 @@
 import { ToastContainer } from "react-toastify";
 import Navbar from "./components/homepages/Navbar";
-import { PageProvider } from "./components/pageContext";
 import "./globals.css";
 import Footer from "./components/homepages/Footer";
 import Cursor from "./lib/cursor";
@@ -17,15 +16,17 @@ export default function RootLayout({ children }) {
         <ToastContainer />
         <div className="darker-gradient-bg min-h-screen">
         <Cursor />
-          <PageProvider>
-            <div className="">
+            <div className="max-w-7xl mx-auto">
+            <div className="fixed z-50 max-w-7xl w-full">
               <Navbar />
             </div>
+            </div>
+            <div>
             {children}
+            </div>
             <div>
               <Footer />
             </div>
-          </PageProvider>
         </div>
       </body>
     </html>

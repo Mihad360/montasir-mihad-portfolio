@@ -3,23 +3,25 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import ProjectBanner from "./ProjectBanner";
 import { getProjects } from "./api/getProjectData";
+import { FaGithub, FaLocationArrow } from "react-icons/fa";
 
 const Projects = () => {
   const [selectedTech, setSelectedTech] = useState("All");
-  const [projects, setProjects] = useState([])
-  useEffect(()=>{
-    const fetchProjects = async () =>{
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const fetchProjects = async () => {
       try {
-        const fetchProjects = await getProjects()
-        setProjects(fetchProjects)
+        const fetchProjects = await getProjects();
+        setProjects(fetchProjects);
+        // console.log(projects);
       } catch (error) {
         console.log(error);
       }
-    }
-    fetchProjects()
-  },[])
+    };
+    fetchProjects();
+  }, []);
 
-  // Correct filtering method
   const filteredProjects =
     selectedTech === "All"
       ? projects
@@ -33,7 +35,6 @@ const Projects = () => {
         My Projects
       </h1>
 
-      {/* Filters */}
       <div className="flex justify-center mb-10 space-x-4">
         {["All", "React", "Next.js"].map((tech) => (
           <button
@@ -50,7 +51,6 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Project Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project) => (
@@ -86,12 +86,36 @@ const Projects = () => {
                 </div>
                 <a
                   href={project.link}
-                  className="text-fuchsia-400 font-semibold hover:text-fuchsia-600 inline-block mt-4"
+                  className="text-fuchsia-400 font-semibold hover:text-fuchsia-600 inline-block mt-4 border border-fuchsia-600 py-1 px-4 rounded-2xl"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   View Project &rarr;
                 </a>
+
+                <div className="flex flex-col items-center gap-3 pt-4">
+                  {project.clientGithubLink && (
+                    <a
+                      href={project.clientGithubLink}
+                      className="text-fuchsia-400 font-semibold hover:text-fuchsia-600 flex items-center gap-3 border border-fuchsia-600 py-1 px-4 rounded-2xl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub/> Client GitHub Code <FaLocationArrow />
+                    </a>
+                  )}
+                  {project.serverGithubLink && (
+                    <a
+                      href={project.serverGithubLink}
+                      className="text-fuchsia-400 font-semibold hover:text-fuchsia-600 flex items-center gap-3 border border-fuchsia-600 py-1 px-4 rounded-2xl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                     <FaGithub/> Server GitHub Code <FaLocationArrow />
+
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))

@@ -9,10 +9,28 @@
   font-weight: 400,500,600,700,800;
 }
 
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(#370938 75%, #861515 0%); /* Default gradient */
+  display: inline-block;
+  position: relative;
+}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+body, html {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+
 /* globals.css */
 .darker-gradient-bg {
   background: linear-gradient(135deg, #1a0b34, #2a0037, #35005b);
   min-height: 100vh;
+  /* min-width: 100wh; */
 }
 
 
@@ -22,7 +40,7 @@
   left: 0;
   width: 30px;
   height: 30px;
-  background-color: tomato; /* Default color */
+  background-color: #fff; /* Default color */
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -45,7 +63,7 @@
 } */
 
 
-@layer utilities{
+/* @layer utilities{
   .pause{
     animation-play-state: paused;
   }
@@ -67,9 +85,9 @@ body.hide_header .header{
     height: 40px;
     padding: 0 10px;
 }
-}
+} */
 
-.skill{
+/* .skill{
   width: 160px;
   height: 160px;
   position: relative;
@@ -181,7 +199,7 @@ body.hide_header .header{
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
 /* #svg {
   position: absolute;
   top: 50%;
@@ -189,7 +207,7 @@ body.hide_header .header{
   transform: translate(-50%, -50%);
 } */
 
-@keyframes anim{
+/* @keyframes anim{
   100%{
     stroke-dashoffset: 110;
   }
@@ -239,4 +257,4 @@ body.hide_header .header{
   .cursor {
     display: none;
   }
-}
+} */

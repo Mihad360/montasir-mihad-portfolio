@@ -8,6 +8,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import Link from "next/link";
+import ParticlesBackground from "./particles/ParticlesBackground";
 
 gsap.registerPlugin(CustomEase);
 CustomEase.create("cubic-text", "0.25,1,0.5,1");
@@ -43,112 +44,118 @@ const Banner = () => {
   };
 
   useEffect(() => {
-    const titles = document.querySelectorAll('.h_title')
-    const tl = gsap.timeline({defaults: {duration: 1}})
+    const titles = document.querySelectorAll(".h_title");
+    const tl = gsap.timeline({ defaults: { duration: 1 } });
     titles.forEach((title, index) => {
-      const el = title.querySelectorAll('span span')
-      const delay = index * 0.08
+      const el = title.querySelectorAll("span span");
+      const delay = index * 0.08;
       tl.to(
         el,
         {
           y: 0,
           duration: 2,
-          ease: 'cubic-text',
+          ease: "cubic-text",
         },
         delay
-      )
+      );
     });
     return () => {};
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-5">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-20 lg:gap-28 pt-28 px-0 md:px-10 lg:px-0">
-        <div className="text-white">
-          <h1 className="h_title relative">
-            <span className="overflow-hidden inline-block">
-              <span className="text-xl md:text-2xl tracking-widest -translate-y-full inline-block">
-                Hi, I am&nbsp;
+    <div>
+      {/* <ParticlesBackground /> */}
+      <div className="max-w-7xl mx-auto px-5">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-0 md:gap-20 lg:gap-28 pt-28 px-0 md:px-10 lg:px-0">
+          <div className="text-white">
+            <h1 className="h_title relative">
+              <span className="overflow-hidden inline-block">
+                <span className="text-xl md:text-2xl tracking-widest -translate-y-full inline-block">
+                  Hi, I am&nbsp;
+                </span>
               </span>
-            </span>
-          </h1>
-          <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
-            <span className="overflow-hidden inline-block">
-              <span className="pt-3 tracking-widest -translate-y-full inline-block">
-                Montasir&nbsp;
+            </h1>
+            <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
+              <span className="overflow-hidden inline-block">
+                <span className="pt-3 tracking-widest -translate-y-full inline-block">
+                  Montasir&nbsp;
+                </span>
               </span>
-            </span>
-          </h1>
-          <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
-            <span className="overflow-hidden inline-block">
-              <span className="tracking-widest -translate-y-full inline-block">
-                Ahmed&nbsp;
+            </h1>
+            <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
+              <span className="overflow-hidden inline-block">
+                <span className="tracking-widest -translate-y-full inline-block">
+                  Ahmed&nbsp;
+                </span>
               </span>
-            </span>
-          </h1>
-          <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
-            <span className="overflow-hidden inline-block">
-              <span className="tracking-widest -translate-y-full inline-block">
-                Mihad&nbsp;
+            </h1>
+            <h1 className="h_title text-6xl md:text-7xl lg:text-9xl relative leading-[90%]">
+              <span className="overflow-hidden inline-block">
+                <span className="tracking-widest -translate-y-full inline-block">
+                  Mihad&nbsp;
+                </span>
               </span>
-            </span>
-          </h1>
-          <p className="uppercase text-md md:text-lg pt-3 pl-1">
-            <TypeAnimation
-              sequence={[
-                "Front-end Developer",
-                2000,
-                "MERN Stack Developer",
-                2000,
-                "Learning & Improving daily",
-                2000,
-                "Doing more projects to make my skills more fresh",
-                2000,
-              ]}
-              speed={50}
-              repeat={Infinity}
-            />
-          </p>
-          <div className="flex justify-center md:justify-start items-center gap-4 pt-5 text-white pb-10 md:pb-0">
-            <Link
-              className="text-4xl hover:scale-125 duration-300 ease-in-out transition-all"
-              target="_blank"
-              href="mailto:ahmedmihad962@gmail.com"
-              rel="noopener noreferrer">
-              <MdEmail />
-            </Link>
-            <Link
-              className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
-              target="_blank"
-              href="https://www.facebook.com/MontasirMihad360"
-              rel="noopener noreferrer">
-              <FaSquareFacebook />
-            </Link>
-            <Link
-              className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
-              target="_blank"
-              href="https://github.com/Mihad360"
-              rel="noopener noreferrer">
-              <FaGithubSquare />
-            </Link>
+            </h1>
+            <p className="uppercase text-md md:text-lg pt-3 pl-1">
+              <TypeAnimation
+                sequence={[
+                  "Front-end Developer",
+                  2000,
+                  "MERN Stack Developer",
+                  2000,
+                  "Learning & Improving daily",
+                  2000,
+                  "Doing more projects to make my skills more fresh",
+                  2000,
+                ]}
+                speed={50}
+                repeat={Infinity}
+              />
+            </p>
+            <div className="flex justify-center md:justify-start items-center gap-4 pt-5 text-white pb-10 md:pb-0">
+              <Link
+                className="text-4xl hover:scale-125 duration-300 ease-in-out transition-all"
+                target="_blank"
+                href="mailto:ahmedmihad962@gmail.com"
+                rel="noopener noreferrer"
+              >
+                <MdEmail />
+              </Link>
+              <Link
+                className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
+                target="_blank"
+                href="https://www.facebook.com/MontasirMihad360"
+                rel="noopener noreferrer"
+              >
+                <FaSquareFacebook />
+              </Link>
+              <Link
+                className="text-3xl hover:scale-125 duration-300 ease-in-out transition-all"
+                target="_blank"
+                href="https://github.com/Mihad360"
+                rel="noopener noreferrer"
+              >
+                <FaGithubSquare />
+              </Link>
+            </div>
           </div>
-        </div>
-        <div
-          className="pointer-event-auto cursor-pointer leading-none transition-height [&>p]:w-[250px] md:[&>p]:w-[500px] [&>p]:duration-500 [&>p]:ease-out"
-          data-color="#0c5076"
-          ref={logoRef}
-          onMouseEnter={onLogoEnter}
-          onMouseLeave={onLogoLeave}
-        >
-          <p>
-            <Image
-              className="w-full md:w-[300px] lg:w-[500px] h-full bg-[#4a30ab] rounded-full shadow-2xl shadow-gray-800 "
-              width={500}
-              height={500}
-              src="https://i.ibb.co.com/tpzmdMJ/image-1-removebg-preview.png"
-              alt="profile"
-            />
-          </p>
+          <div
+            className="pointer-event-auto cursor-pointer leading-none transition-height [&>p]:w-[250px] md:[&>p]:w-[500px] [&>p]:duration-500 [&>p]:ease-out"
+            data-color="#0c5076"
+            ref={logoRef}
+            onMouseEnter={onLogoEnter}
+            onMouseLeave={onLogoLeave}
+          >
+            <p>
+              <Image
+                className="w-full md:w-[300px] lg:w-[500px] h-full bg-[#4a30ab] rounded-full shadow-2xl shadow-gray-800 "
+                width={500}
+                height={500}
+                src="https://i.ibb.co.com/tpzmdMJ/image-1-removebg-preview.png"
+                alt="profile"
+              />
+            </p>
+          </div>
         </div>
       </div>
     </div>

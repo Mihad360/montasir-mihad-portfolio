@@ -1,15 +1,25 @@
-export const dynamic = "force-dynamic"
-
-import ColsAni from "./components/ColsAni";
+import AllSkills from "./components/homepages/AllSkills";
 import Banner from "./components/homepages/Banner";
+import ParticlesBackground from "./components/homepages/particles/ParticlesBackground";
 import ResumeCv from "./components/homepages/ResumeCv";
 
 export default function Home() {
   return (
-    <div>
-      <div className="pb-12"><Banner></Banner></div>
-      <div><ResumeCv></ResumeCv></div>
-      <div><ColsAni></ColsAni></div>
+    <div className="relative">
+      <div className="absolute top-0 left-0 w-full h-screen z-0 opacity-70">
+        <ParticlesBackground />
+      </div>
+
+      <div className="relative z-10 pb-12">
+        <Banner />
+      </div>
+
+      <div className="relative z-10">
+        <ResumeCv />
+      </div>
+      <div className="relative z-10">
+        <AllSkills />
+      </div>
     </div>
   );
 }
