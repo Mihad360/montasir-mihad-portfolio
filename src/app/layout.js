@@ -1,8 +1,8 @@
 import { ToastContainer } from "react-toastify";
-import Navbar from "./components/homepages/Navbar";
+import Navbar from "../components/homepages/Navbar";
 import "./globals.css";
-import Footer from "./components/homepages/Footer";
-import Cursor from "./lib/cursor";
+import Footer from "../components/homepages/Footer";
+import Cursor from "../lib/cursor";
 
 export const metadata = {
   title: "Montasir Mihad Portfolio",

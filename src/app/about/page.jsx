@@ -1,8 +1,8 @@
 import React from 'react';
-import Contactme from '../components/contactmepages/Contactme';
-import AboutBanner from '../components/aboutpages/AboutBanner';
-import AboutBannertwo from '../components/aboutpages/AboutBannertwo';
-import Exp_skill from '../components/aboutpages/Exp_skill';
+import Contactme from '../../components/contactmepages/Contactme';
+import AboutBanner from '../../components/aboutpages/AboutBanner';
+import AboutBannertwo from '../../components/aboutpages/AboutBannertwo';
+import Exp_skill from '../../components/aboutpages/Exp_skill';
 
 export const metadata = {
     title: "Mihad Portfolio | About",

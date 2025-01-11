@@ -1,0 +1,65 @@
+export const skillsData = [
+    {
+        id: 1,
+        name: 'HTML',
+        description: 'A markup language for creating web pages.',
+        logo: 'https://i.ibb.co.com/rGMkbqb/download-html5-round-logo-icon-png-701751694771801xidtztxanv-removebg-preview.png',
+        percentage: 80,
+    },
+    {
+        id: 2,
+        name: 'CSS',
+        description: 'A style sheet language for designing web pages.',
+        logo: 'https://i.ibb.co.com/wRt2Lfp/logo-2582747-1280-removebg-preview.png',
+        percentage: 75,
+    },
+    {
+        id: 3,
+        name: 'JavaScript',
+        description: 'A versatile programming language for web development.',
+        logo: 'https://i.ibb.co.com/zPRqm1d/5453022-removebg-preview.png',
+        percentage: 62,
+    },
+    {
+        id: 4,
+        name: 'React.js',
+        description: 'A JavaScript library for building user interfaces.',
+        logo: 'https://i.ibb.co.com/jw7fSTc/9fbbaeb59401e5630c288dce9ef57e03-removebg-preview.png',
+        percentage: 75,
+    },
+    {
+        id: 5,
+        name: 'Next.js',
+        description: 'A React framework for server-side rendering and static websites.',
+        logo: 'https://i.ibb.co.com/SK0S8Ws/download-removebg-preview.png',
+        percentage: 65,
+    },
+    {
+        id: 6,
+        name: 'MongoDB',
+        description: 'A NoSQL database for modern web apps.',
+        logo: 'https://i.ibb.co.com/3FHS5WQ/download-removebg-preview-1.png',
+        percentage: 75,
+    },
+    {
+        id: 7,
+        name: 'Firebase',
+        description: 'A platform for building mobile and web applications.',
+        logo: 'https://i.ibb.co.com/C8ftmMt/download-removebg-preview-2.png',
+        percentage: 75,
+    },
+    {
+        id: 8,
+        name: 'Node.js',
+        description: 'A JavaScript runtime built on Chrome\'s V8 engine.',
+        logo: 'https://i.ibb.co.com/7GVQMk6/download-removebg-preview-3.png',
+        percentage: 65,
+    },
+    {
+        id: 10,
+        name: 'Tailwind CSS',
+        description: 'A utility-first CSS framework for rapid UI development.',
+        logo: 'https://i.ibb.co.com/hmDQB7C/download-removebg-preview-4.png',
+        percentage: 85,
+    }
+];

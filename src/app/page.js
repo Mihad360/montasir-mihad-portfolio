@@ -1,7 +1,8 @@
-import AllSkills from "./components/homepages/AllSkills";
-import Banner from "./components/homepages/Banner";
-import ParticlesBackground from "./components/homepages/particles/ParticlesBackground";
-import ResumeCv from "./components/homepages/ResumeCv";
+import AllSkills from "../components/homepages/AllSkills";
+import Banner from "../components/homepages/Banner";
+import Geometry from "../components/homepages/geometry/Geometry";
+import ParticlesBackground from "../components/homepages/particles/ParticlesBackground";
+import ResumeCv from "../components/homepages/ResumeCv";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <div className="relative z-10 pb-12">
         <Banner />
       </div>
+
+{/* <Geometry></Geometry> */}
 
       <div className="relative z-10">
         <ResumeCv />

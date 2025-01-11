@@ -1,4 +1,4 @@
-import Contactme from "../components/contactmepages/Contactme";
+import Contactme from "../../components/contactmepages/Contactme";
 
 export const metadata = {
     title: "Mihad Portfolio | Contact Me",
